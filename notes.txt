@@ -1,0 +1,17 @@
+(March 28, 2024)
+articles that helped:
+
+The HTTP flow section showed exactly what a response body contains. It's just
+a text starting with response code and status, followed by headers and in the
+end, seperated by an empty line, is the response body (usually HTML).
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview
+
+The Date has to be formatted in a particular way for the browser to display.
+Ruby's strftime docs helped me get the format correct.
+
+https://docs.ruby-lang.org/en/master/strftime_formatting_rdoc.html
+
+The format is `Day, day_in_num abv_month_name year_name hour:minutes:seconds
+time_zone`
+in ruby this is: Time.now.strftime '%a, %d %b %Y %H:%M:%S %Z'
